@@ -1,3 +1,4 @@
+#!/usr/bin/env swift
 import Foundation
 
 // 转换单个图片文件为 HEIC 格式
