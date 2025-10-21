@@ -1,0 +1,11 @@
+{
+  "extractor": {
+    "base-directory": "~/Downloads/"
+  },
+  "downloader": {
+    "part": true,
+    "retries": 0,
+    "timeout": 5,
+    "threads": 30
+  }
+}
