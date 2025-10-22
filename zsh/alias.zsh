@@ -20,4 +20,4 @@ alias brewleaves="brew leaves"
 alias brewupup="brew update && brew upgrade"
 
 
-alias cdi="cd /Users/fx/Library/Mobile\ Documents/com~apple~CloudDocs"
+alias cdi="cd $HOME/Library/Mobile\ Documents/com~apple~CloudDocs"
