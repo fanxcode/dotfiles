@@ -1,5 +1,6 @@
 --cookies-from-browser safari
 --write-subs            # 下载字幕
+--embed-metadata
 --sub-lang "zh-CN"
 --sub-format "best"
 -o "~/Downloads/%(title)s.%(ext)s"
