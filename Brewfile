@@ -6,6 +6,8 @@ brew "asitop"
 brew "bat"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
 brew "btop"
+# Console Matrix
+brew "cmatrix"
 # Perl lib for reading and writing EXIF metadata
 brew "exiftool"
 # Modern, maintained replacement for ls
@@ -101,3 +103,4 @@ brew "zsh-fast-syntax-highlighting"
 # Create and run Linux containers using lightweight virtual machines
 cask "container"
 cask "font-jetbrains-mono-nerd-font"
+cask "font-maple-mono-nf-cn"
