@@ -8,6 +8,8 @@ brew "bat"
 brew "btop"
 # Console Matrix
 brew "cmatrix"
+# Create and run Linux containers using lightweight virtual machines
+brew "container"
 # Perl lib for reading and writing EXIF metadata
 brew "exiftool"
 # Modern, maintained replacement for ls
@@ -64,7 +66,7 @@ brew "ncdu"
 brew "tree-sitter"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
-# Platform built on V8 to build network applications
+# Open-source, cross-platform JavaScript runtime environment
 brew "node"
 # 7-Zip (high compression file archiver) implementation
 brew "p7zip"
@@ -84,8 +86,6 @@ brew "resvg"
 brew "ripgrep"
 # 7-Zip is a file archiver with a high compression ratio
 brew "sevenzip"
-# Simplified and community-driven man pages
-brew "tldr"
 # CLI tool that moves files or folder to the trash
 brew "trash"
 # Parser generator tool
