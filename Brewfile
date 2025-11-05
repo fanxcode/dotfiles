@@ -2,6 +2,8 @@
 brew "aom"
 # Perf monitoring CLI tool for Apple Silicon
 brew "asitop"
+# Bourne-Again SHell, a UNIX command interpreter
+brew "bash"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Resource monitor. C++ version and continuation of bashtop and bpytop
@@ -54,6 +56,8 @@ brew "imagemagick"
 brew "jq"
 # Simple terminal UI for git commands
 brew "lazygit"
+# Terminal file manager
+brew "lf"
 # Powerful, lightweight programming language
 brew "lua"
 # Feature-rich command-line audio/video downloader
@@ -100,7 +104,17 @@ brew "zoxide"
 brew "zsh-autosuggestions"
 # Feature-rich syntax highlighting for Zsh
 brew "zsh-fast-syntax-highlighting"
+# Cloud storage service
+cask "baidunetdisk"
+# OpenAI's official ChatGPT desktop app
+cask "chatgpt"
 # Create and run Linux containers using lightweight virtual machines
 cask "container"
 cask "font-jetbrains-mono-nerd-font"
 cask "font-maple-mono-nf-cn"
+# Open-source video transcoder
+cask "handbrake-app"
+# Messaging app with a focus on speed and security
+cask "telegram"
+# Free messaging and calling application
+cask "wechat"
