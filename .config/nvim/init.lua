@@ -1,14 +1,14 @@
-vim.opt.number = true
-vim.opt.relativenumber = true
-vim.opt.cursorline = true
-vim.opt.expandtab = true
-vim.opt.tabstop = 2
-vim.opt.shiftwidth = 2
-vim.opt.wrap = true
-vim.opt.scrolloff = 5
-vim.opt.signcolumn = 'yes'
-vim.opt.ignorecase = true
-vim.opt.smartcase = true
-vim.opt.hlsearch = false
-vim.opt.incsearch = true
-vim.g.mapleader = ' '
+require("plugins.plugins-setup")
+require("core.options")
+require("core.keymaps")
+
+require("plugins.lualine")
+require("plugins.nvim-tree")
+require("plugins.treesitter")
+require("plugins.lsp")
+require("plugins.cmp")
+require("plugins.comment")
+require("plugins.autopairs")
+require("plugins.gitsigns")
+require("plugins.bufferline")
+require("plugins.telescope")
