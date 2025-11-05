@@ -1,7 +1,14 @@
-require 'custom.options'
--- require 'custom.ui.tabline'
-require 'custom.keymaps'
-require 'custom.autocmds'
-require 'custom.filetypes'
-require 'custom.lsp'
-require 'custom.lazy'
+vim.opt.number = true
+vim.opt.relativenumber = true
+vim.opt.cursorline = true
+vim.opt.expandtab = true
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.wrap = true
+vim.opt.scrolloff = 5
+vim.opt.signcolumn = 'yes'
+vim.opt.ignorecase = true
+vim.opt.smartcase = true
+vim.opt.hlsearch = false
+vim.opt.incsearch = true
+vim.g.mapleader = ' '
