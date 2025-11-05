@@ -1,22 +1,28 @@
 require("mason").setup({
   ui = {
-      icons = {
-          package_installed = "✓",
-          package_pending = "➜",
-          package_uninstalled = "✗"
-      }
+    icons = {
+      package_installed = "✓",
+      package_pending = "➜",
+      package_uninstalled = "✗"
+    }
   }
 })
 
 require("mason-lspconfig").setup({
-  -- 确保安装，根据需要填写
-  ensure_installed = {
-    "lua_ls",
-  },
+  ensure_installed = { "lua_ls" },
 })
 
 local capabilities = require('cmp_nvim_lsp').default_capabilities()
 
-require("lspconfig").lua_ls.setup {
+-- 定义 LSP 配置（新 API）
+vim.lsp.config["lua_ls"] = {
   capabilities = capabilities,
+  settings = {
+    Lua = {
+      diagnostics = { globals = { "vim" } },
+    },
+  },
 }
+
+-- 启动服务器
+vim.lsp.start(vim.lsp.config["lua_ls"])
