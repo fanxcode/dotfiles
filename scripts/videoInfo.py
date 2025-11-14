@@ -7,7 +7,7 @@ import shlex
 from pathlib import Path
 
 # 支持的视频扩展
-VIDEO_EXTS = {".mp4", ".mkv", ".mov", ".avi", ".flv"}
+VIDEO_EXTS = {".mp4", ".mkv", ".mov", ".avi", ".flv", ".3gp"}
 
 def human_size(size):
     for unit in ["B", "KB", "MB", "GB", "TB"]:
