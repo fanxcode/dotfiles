@@ -18,6 +18,15 @@ return {
         enable_git_status = true,
         enable_diagnostics = true,
 
+        window = {
+          mappings = {
+            ["<cr>"] = "open",
+            ["l"] = "open",
+            ["h"] = "close_node",
+            ["q"] = "close_window",
+          },
+        },
+
         filesystem = {
           filtered_items = {
             hide_dotfiles = false,
