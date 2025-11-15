@@ -90,6 +90,8 @@ brew "resvg"
 brew "ripgrep"
 # 7-Zip is a file archiver with a high compression ratio
 brew "sevenzip"
+# Terminal multiplexer
+brew "tmux"
 # CLI tool that moves files or folder to the trash
 brew "trash"
 # Parser generator tool
@@ -112,8 +114,6 @@ cask "chatgpt"
 cask "container"
 cask "font-jetbrains-mono-nerd-font"
 cask "font-maple-mono-nf-cn"
-# Open-source video transcoder
-cask "handbrake-app"
 # Messaging app with a focus on speed and security
 cask "telegram"
 # Free messaging and calling application
