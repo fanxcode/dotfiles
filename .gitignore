@@ -1,3 +1,4 @@
 .DS_Store
 .neoconf.json
 lazy-lock.json
+btop/btop.conf
