@@ -24,6 +24,14 @@ return {
             ["l"] = "open",
             ["h"] = "close_node",
             ["q"] = "close_window",
+            ["<tab>"] = function(state)
+              local node = state.tree:get_node()
+              if node.type == "directory" then
+                require("neo-tree.sources.filesystem").toggle_directory(state, node)
+              else
+                require("neo-tree.sources.filesystem.commands").open(state)
+              end
+            end,
           },
         },
 
