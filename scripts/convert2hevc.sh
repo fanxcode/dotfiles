@@ -13,7 +13,6 @@ process_video() {
   ffmpeg -hide_banner -loglevel error -y -nostdin \
     -i "$infile" \
     -c:v hevc_videotoolbox -q:v 60 -tag:v hvc1 -profile:v main \
-    -c:a copy \
     "$outfile"
 }
 
@@ -22,7 +21,7 @@ target="${1:-.}"
 
 if [[ -d "$target" ]]; then
   # 安全处理目录下所有视频文件
-  find "$target" -type f \( -iname "*.mov" -o -iname "*.mp4" -o -iname "*.m4v" -o -iname "*.3gp" \) -print0 |
+  find "$target" -type f \( -iname "*.mov" -o -iname "*.mp4" -o -iname "*.m4v" -o -iname "*.3gp" -o -iname "*.wmv" \) -print0 |
     while IFS= read -r -d '' f; do
       process_video "$f"
     done
