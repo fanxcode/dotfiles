@@ -1,7 +1,7 @@
 require("config.lazy")
 vim.lsp.enable 'lua_ls'
 
-require("core.options")
-require("core.keymaps")
+require("config.options")
+require("config.keymaps")
 vim.cmd.colorscheme "catppuccin"
 
