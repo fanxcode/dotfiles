@@ -10,8 +10,13 @@ return {
     lazy = false, -- neo-tree will lazily load itself
     config = function()
       -- 快捷键：打开或切换文件树
-      vim.keymap.set("n", "<leader>e", ":Neotree filesystem reveal left<CR>", { desc = "File Explorer" })
-
+      vim.keymap.set("n", "<leader>e", function()
+        require("neo-tree.command").execute({
+          toggle = true,
+          source = "filesystem",
+          position = "left",
+        })
+      end, { desc = "Toggle Neotree" })
       require("neo-tree").setup({
         close_if_last_window = true, -- 当只剩 Neo-tree 时自动关闭
         popup_border_style = "rounded",
