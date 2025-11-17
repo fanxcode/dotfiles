@@ -21,7 +21,7 @@ target="${1:-.}"
 
 if [[ -d "$target" ]]; then
   # 安全处理目录下所有视频文件
-  find "$target" -type f \( -iname "*.mov" -o -iname "*.mp4" -o -iname "*.m4v" -o -iname "*.3gp" -o -iname "*.wmv" \) -print0 |
+  find "$target" -type f \( -iname "*.mov" -o -iname "*.mp4" -o -iname "*.m4v" -o -iname "*.3gp" -o -iname "*.wmv" -o -iname "*.avi" -o -iname "*.mkv" \) -print0 |
     while IFS= read -r -d '' f; do
       process_video "$f"
     done
