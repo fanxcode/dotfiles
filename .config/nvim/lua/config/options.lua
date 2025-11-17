@@ -3,7 +3,7 @@ local opt = vim.opt
 
 -- 行号 
 opt.number = true
-opt.relativenumber = true 
+opt.relativenumber = true
 
 -- 锁进
 opt.tabstop = 4
@@ -20,6 +20,9 @@ opt.cursorline = true
 -- 搜索
 opt.ignorecase = true
 opt.smartcase = true
+opt.hlsearch = false
+
+
 
 -- 外观
 opt.termguicolors = true
