@@ -14,4 +14,4 @@ BREW_FORTUNE_DIR="/opt/homebrew/share/games/fortunes"
 [ -f "$BREW_FORTUNE_DIR/myquotes" ] || ln -s "$HOME/dotfiles/fortune/myquotes" "$BREW_FORTUNE_DIR/myquotes"
 
 # generate .dat if not exists
-[ -f "$BREW_FORTUNE_DIR/myquotes.dat" ] || strfile "$BREW_FORTUNE_DIR/myquotes" "$BREW_FORTUNE_DIR/myquotes.dat"
+strfile "$BREW_FORTUNE_DIR/myquotes" "$BREW_FORTUNE_DIR/myquotes.dat"
