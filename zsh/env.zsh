@@ -5,8 +5,11 @@ source /opt/homebrew/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-high
 # Set up fzf key bindings and fuzzy completion
 source <(fzf --zsh)
 
-export PATH="/opt/homebrew/opt/trash/bin:$PATH"
 
+export FORTUNE_PATH="$HOME/.local/share/fortune"
+
+
+export PATH="/opt/homebrew/opt/trash/bin:$PATH"
 export PATH="/opt/homebrew/bin:$PATH"
 export PATH="/opt/homebrew/sbin:$PATH"
 # proxy
