@@ -6,8 +6,6 @@ brew "asitop"
 brew "bash"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
-# Resource monitor. C++ version and continuation of bashtop and bpytop
-brew "btop"
 # Console Matrix
 brew "cmatrix"
 # Create and run Linux containers using lightweight virtual machines
@@ -32,12 +30,16 @@ brew "xvid"
 brew "zimg"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
+# Infamous electronic fortune-cookie generator
+brew "fortune"
 # Command-line fuzzy finder written in Go
 brew "fzf"
 # Command-line downloader for image-hosting site galleries and collections
 brew "gallery-dl"
 # GitHub command-line tool
 brew "gh"
+# Improved top (interactive process viewer)
+brew "htop"
 # ISO/IEC 23008-12:2017 HEIF file format decoder and encoder
 brew "libheif"
 # C/C++ seam carving library
@@ -52,12 +54,16 @@ brew "libtool"
 brew "libzip"
 # Tools and libraries to manipulate images in many formats
 brew "imagemagick"
+# Image loading and rendering library
+brew "imlib2"
 # Lightweight and flexible command-line JSON processor
 brew "jq"
 # Simple terminal UI for git commands
 brew "lazygit"
 # Terminal file manager
 brew "lf"
+# Rainbows and unicorns in your console!
+brew "lolcat"
 # Powerful, lightweight programming language
 brew "lua"
 # Feature-rich command-line audio/video downloader
@@ -88,6 +94,8 @@ brew "pyenv"
 brew "resvg"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# Extremely fast tool to remove dupes and other lint from your filesystem
+brew "rmlint"
 # 7-Zip is a file archiver with a high compression ratio
 brew "sevenzip"
 # Terminal multiplexer
