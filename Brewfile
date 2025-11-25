@@ -86,8 +86,6 @@ brew "pillow"
 brew "poppler"
 # Object-relational database system
 brew "postgresql@14", restart_service: :changed
-# Pretty, minimal and fast ZSH prompt
-brew "pure"
 # Python version management
 brew "pyenv"
 # SVG rendering tool and library
@@ -108,16 +106,16 @@ brew "tree-sitter-cli"
 brew "unar"
 # Command-line tool for Vapor (Server-side Swift web framework)
 brew "vapor"
+# Zsh plugin manager
+brew "zimfw"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
-# Fish-like fast/unobtrusive autosuggestions for zsh
-brew "zsh-autosuggestions"
-# Feature-rich syntax highlighting for Zsh
-brew "zsh-fast-syntax-highlighting"
 # Cloud storage service
 cask "baidunetdisk"
 # OpenAI's official ChatGPT desktop app
 cask "chatgpt"
+# Continuation of Clash Verge - A Clash Meta GUI based on Tauri
+cask "clash-verge-rev"
 # Create and run Linux containers using lightweight virtual machines
 cask "container"
 cask "font-jetbrains-mono-nerd-font"
