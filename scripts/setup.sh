@@ -15,3 +15,4 @@ BREW_FORTUNE_DIR="/opt/homebrew/share/games/fortunes"
 
 # generate .dat if not exists
 strfile "$BREW_FORTUNE_DIR/myquotes" "$BREW_FORTUNE_DIR/myquotes.dat"
+ln -s ~/dotfiles/zsh/zimrc ~/.zimrc
