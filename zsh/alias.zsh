@@ -10,7 +10,7 @@ alias c="clear"
 alias rm="trash"
 
 alias brewbackup="brew bundle dump --describe --file=$HOME/dotfiles/Brewfile --force"
-alias brewre="brew bundle --file=$HOME/dotfiles/Brewfile "
+alias brewre="brew bundle --file=$HOME/dotfiles/Brewfile"
 alias brewsearch="brew search"
 alias brewinstall="brew install"
 alias brewuninstall="brew uninstall"
