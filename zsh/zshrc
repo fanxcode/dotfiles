@@ -1,6 +1,7 @@
-source $HOME/dotfiles/zsh/pure.zsh
-source $HOME/dotfiles/zsh/alias.zsh
-source $HOME/dotfiles/zsh/env.zsh
+source ~/dotfiles/zsh/zim.zsh
+source ~/dotfiles/zsh/fzf.zsh
+source ~/dotfiles/zsh/alias.zsh
+source ~/dotfiles/zsh/env.zsh
 
 # 每次终端显示 2/3 的自定义 + 1/3 的系统
 if (( RANDOM % 3 )); then

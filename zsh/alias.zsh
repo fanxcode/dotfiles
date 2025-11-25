@@ -1,4 +1,3 @@
-# alias
 alias v="nvim"
 alias l="eza"
 alias ls="eza -a"

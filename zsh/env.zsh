@@ -1,10 +1,4 @@
-# eval "$(starship init zsh)"
 eval "$(zoxide init --cmd cd zsh)"
-source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /opt/homebrew/opt/zsh-fast-syntax-highlighting/share/zsh-fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
-# Set up fzf key bindings and fuzzy completion
-source <(fzf --zsh)
-
 
 export FORTUNE_PATH="$HOME/.local/share/fortune"
 
