@@ -1,5 +1,6 @@
 source ~/dotfiles/zsh/zim.zsh
 source ~/dotfiles/zsh/fzf.zsh
+source ~/dotfiles/zsh/fzf-c.zsh
 source ~/dotfiles/zsh/alias.zsh
 source ~/dotfiles/zsh/env.zsh
 
