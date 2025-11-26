@@ -1,26 +1,34 @@
 # =================================================================
-# FZF macOS 优化配置：排除 Library/Containers 沙盒路径
-# 
-# 依赖工具：fd (安装：brew install fd)
+# FZF macOS 优化配置：最终修复 (使用数组安全展开参数)
 # =================================================================
 
-### 1. 独立 FZF 搜索 (fzf 或 Ctrl-T)
-# 设置 FZF 默认命令：使用 fd 替代 find，排除 .git 和 Library/Containers
-export FZF_DEFAULT_COMMAND='fd --type f --hidden --exclude .git --exclude Library/Containers --exclude /Library/Daemon\ Containers'
+# 1. 定义核心排除目录的参数【数组】
+# 必须使用数组，以确保 Shell 能够将其展开为独立的参数
+FZF_EXCLUDE_ARGS=(
+  --exclude .git
+  --exclude Library/Containers
+  --exclude "Library/Group Containers"
+  --exclude "Library/Daemon Containers"
+)
 
-### 2. 路径补全 (在命令行中按 Tab 键)
+# 2. 独立 FZF 搜索 (fzf 或 Ctrl-T)
+# 使用双引号和数组下标 "${FZF_EXCLUDE_ARGS[@]}" 安全展开参数
+_fzf_default_command() {
+  echo "fd --type f --hidden ${FZF_EXCLUDE_ARGS[@]}"
+}
 
-# 文件和目录路径补全函数 (fzf_compgen_path)
+# 导出变量，确保 fzf 主程序能够调用
+export FZF_DEFAULT_COMMAND="$(_fzf_default_command)"
+
+
+# 3. 路径补全函数 (_fzf_compgen_path, _fzf_compgen_dir)
+# 同样使用双引号和数组下标 "${FZF_EXCLUDE_ARGS[@]}"
 _fzf_compgen_path() {
-  # 使用 fd 替代 find，排除 Library/Containers 目录
-  # --follow 用于跟随符号链接
-  fd --hidden --follow --exclude .git --exclude Library/Containers --exclude /Library/Daemon\ Containers . "$1"
+  fd --hidden --follow "${FZF_EXCLUDE_ARGS[@]}" . "$1"
 }
 
-# 仅目录补全函数 (fzf_compgen_dir)
 _fzf_compgen_dir() {
-  # 使用 fd 替代 find，排除 Library/Containers 目录，并只列出目录 (type d)
-  fd --type d --hidden --follow --exclude .git --exclude Library/Containers --exclude /Library/Daemon\ Containers --type d . "$1"
+  fd --type d --hidden --follow "${FZF_EXCLUDE_ARGS[@]}" . "$1"
 }
 
-# =================================================================
+# =================================================================``
