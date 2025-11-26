@@ -10,5 +10,4 @@ zmodule asciiship
 zmodule zsh-users/zsh-completions
 zmodule zsh-users/zsh-autosuggestions
 zmodule zdharma-continuum/fast-syntax-highlighting
-zmodule pabloariasal/zfm
 zmodule Aloxaf/fzf-tab
